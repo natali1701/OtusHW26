@@ -37,9 +37,13 @@ NFS или SAMBA на выбор:
 Для включенного firewall прописываем:
 
 firewall-cmd --permanent --add-service=rpc-bind
+
 firewall-cmd --permanent --add-service=mountd
+
 firewall-cmd --permanent --add-port=2049/tcp
+
 firewall-cmd --permanent --add-port=2049/udp
+
 firewall-cmd --reload
 
 ## **Проверка**
